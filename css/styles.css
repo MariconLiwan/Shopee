@@ -123,6 +123,7 @@ h2, .h2 {
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
+    color: #082032;
   }
 }
 
@@ -239,7 +240,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #212cc0;
+  color: red;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3024,14 +3025,15 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #2937f0;
-  border-color: #2937f0;
+  color: #082032;
+  background-color: #FCECDD;
+  border-color: #FCECDD;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #232fcc;
-  border-color: #212cc0;
+  color: #082032;
+  background-color: #FFD07F;
+  border-color: #FFD07F;
+  transform: scale(1.2); 
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3049,8 +3051,8 @@ textarea.form-control-lg {
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #2937f0;
-  border-color: #2937f0;
+  background-color: #FF4C29;
+  border-color: #FF4C29;
 }
 
 .btn-secondary {
@@ -3937,7 +3939,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #2937f0;
+  color: #fff;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3946,11 +3948,15 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.nav-link:hover, .nav-link:focus {
-  color: #212cc0;
+.nav-link:hover{
+  color: #fff;
+} 
+
+.nav-link:focus {
+  color: #fff;
 }
 .nav-link.disabled {
-  color: #6c757d;
+  color: #fff;
   pointer-events: none;
   cursor: default;
 }
@@ -3970,13 +3976,13 @@ textarea.form-control-lg {
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #fff;
   background-color: transparent;
   border-color: transparent;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #fff;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4042,6 +4048,7 @@ textarea.form-control-lg {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
+  background-color: #fb4f14;
 }
 .navbar-brand {
   padding-top: 0.3125rem;
@@ -4075,20 +4082,24 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+
 }
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
+  font-weight: bold;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+  background-color: #FFD07F;;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
+    background-color: white;
   }
 }
 .navbar-toggler:hover {
@@ -4098,6 +4109,7 @@ textarea.form-control-lg {
   text-decoration: none;
   outline: 0;
   box-shadow: 0 0 0 0.25rem;
+  background-color: #FAAD80;
 }
 
 .navbar-toggler-icon {
@@ -7750,6 +7762,7 @@ textarea.form-control-lg {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  font-family: sans-serif; 
 }
 
 .text-body {
@@ -11283,7 +11296,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  background: linear-gradient(150deg, red, yellow) !important;
 }
 
 .font-alt {
@@ -11291,7 +11304,7 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+  background: -webkit-linear-gradient(red, orange);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -11310,13 +11323,14 @@ section {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #fff;
+  background-color: #fb4f14;;
 }
 #mainNav .navbar-brand {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: white;
 }
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:active {
-  color: #2937f0;
+  color: white;
 }
 #mainNav .navbar-toggler {
   font-size: 0.875rem;
@@ -11324,10 +11338,11 @@ section {
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #212529;
+  color: white;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #6c757d;
+  color: white;
+  transform: scale(1.2); 
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #2937f0;
@@ -11395,7 +11410,7 @@ section {
 section.cta {
   position: relative;
   padding: 15rem 0;
-  background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
+  background-image: url("https://images.unsplash.com/photo-1531547255897-f400dc1b7de2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80");
   background-position: center;
   background-size: cover;
 }
@@ -11543,10 +11558,10 @@ footer a:hover, footer a:active, footer a:focus {
   display: none;
 }
 .masthead .masthead-device-mockup .circle .gradient-start-color {
-  stop-color: #2937f0;
+  stop-color: red;
 }
 .masthead .masthead-device-mockup .circle .gradient-end-color {
-  stop-color: #9f1ae2;
+  stop-color: orange;
 }
 .masthead .masthead-device-mockup .shape-1 {
   position: absolute;
